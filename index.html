@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__text">
+                <h1 class="main__text-heading">Learn to code by watching others</h1>
+                <p class="main__text-paragraph">See how experienced developers solve problems in real-time. Watching
+                    scripted
+                    tutorials
+                    is great,
+                    but understanding how developers think is invaluable. </p>
+            </div>
+            <div class="main__forms" id="app">
+                <button class="main__forms-btn"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+                <form class="main__forms-form">
+                    <div class="form-box">
+                        <input @input="setNameValue" type="text" placeholder="First Name" class="main__forms-form-input first">
+                        <p class="main__forms-form-error" :class="errorNameClass">First Name cannot be empty</p>
+                    </div>
+                    <div class="form-box">
+                        <input @input='setLastNameValue' type="text" placeholder="Last Name" class="main__forms-form-input second">
+                        <p class="main__forms-form-error" :class="errorLastNameClass">Last Name cannot be empty</p>
+                    </div>
+                    <div class="form-box">
+                        <input @input="setEmailValue" type="email" placeholder="Email Address" class="main__forms-form-input third">
+                        <p class="main__forms-form-error" :class="errorEmailClass">Looks like this is not an email</p>
+                    </div>
+                    <div class="form-box">
+                        <input @input="setPasswordValue" type="password" placeholder="Password" class="main__forms-form-input fourth">
+                        <p class="main__forms-form-error" :class="errorPasswordClass">Password cannot be empty/too short</p>
+                    </div>
+                    <button @click="checkValues" type='submit' class="main__forms-form-btn">Claim your free trial</button>
+                    <p class="main__forms-form-paragraph">By clicking the button, you are agreeing to our <a
+                            href="#">Terms and
+                            Services</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/katrine9176" target="_blank">katrine9176</a>.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
