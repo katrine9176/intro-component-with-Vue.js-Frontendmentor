@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution URL](https://github.com/katrine9176/intro-component-with-Vue.js-Frontendmentor)
+- Live Site URL: [Live site](https://katrine9176.github.io/intro-component-with-Vue.js-Frontendmentor/)
 
 ## My process
 
@@ -44,8 +44,8 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - BEM
-- Vue.js - [Vue.js site]()
+- Vue.js - [Vue.js site](https://vuejs.org/)
 
 ## Author
 
-- Frontend Mentor - [@katrine9176](https://vuejs.org/)
+- Frontend Mentor - [@katrine9176](https://github.com/katrine9176)
